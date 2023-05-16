@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: rgb(229, 228, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .left-side {
+    background: rgb(239, 239, 240);
+    padding: 35px;
+}
+
+.personal-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal-text .personal-img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.personal-text .personal-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.personal-text h2 {
+    color: #003147;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4rem;
+}
+
+.personal-text h2 span {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.left-info {
+    padding-top: 40px;
+}
+
+.title {
+    color: #003147;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+    letter-spacing: 1px;
+    border-top: 1px solid #003147;;
+    border-bottom: 1px solid #003147;;
+    margin-bottom: 20px;
+}
+
+.left-info ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.left-info ul li a {
+    text-decoration: none;
+}
+
+.left-info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 19px;
+    color: rgb(99, 100, 102);
+}
+
+.left-info ul li span{
+    color: #003147;
+    font-weight: 300;
+}
+
+.left-info.language .percent{
+    position: relative;
+    width: 100%;
+    height: 7px;
+    background: rgb(188, 190, 192);
+    display: block;
+    margin-top: 5px;
+}
+
+.left-info.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(99, 100, 102);
+}
+
+.container .right-side {
+    position: relative;
+    background: #fff;
+    padding: 35px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about-title {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 0;
+    border-top: 1px solid #003147;
+    border-bottom: 1px solid #003147;
+}
+
+.about p:first-of-type {
+    letter-spacing: 1px;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0; 
+}
+
+.about .box .education {
+    max-width: 150px;
+    margin-right: 35px;
+}
+
+.about .box .education h4 {
+    color: #464c4f;
+}
+
+.about .box .education h5 {
+    text-transform: uppercase;
+    color: #70777a;
+    font-weight: 600;
+}
+
+.about p {
+    color: #333;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: rgb(188, 190, 192);
+}
+
+.skills .box .percent div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(99, 100, 102);
+}
+
+
+@media (max-width: 1200px){
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+    .skills .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
