@@ -155,16 +155,18 @@ body {
     margin: 20px 0; 
 }
 
-.about .box .education {
+.about .box .time {
     max-width: 150px;
-    margin-right: 35px;
 }
 
-.about .box .education h4 {
+.education p {
+    margin-left: 40px;
+}
+.about .box .time h4 {
     color: #464c4f;
 }
 
-.about .box .education h5 {
+.about .box .time h5 {
     text-transform: uppercase;
     color: #70777a;
     font-weight: 600;
@@ -215,6 +217,10 @@ body {
 @media (max-width: 768px){
     .skills .box {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills .box h4 {
+        margin-bottom: 5px;
     }
 }
 
